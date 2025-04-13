@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="../BTSRP/TINDOG/Assets/arrow-through-heart.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Love Calculator 💕</title>
+  </head>
+  <body>
+    <section id="cntDwn"></section>
+    <div class="wrapper">
+      <h1>Love Calculator 💕</h1>
+
+      <form action="#" onsubmit="return false;">
+        <label for="Your Name"
+          >Enter your name:
+          <input
+            type="text"
+            name="Your Name"
+            placeholder="John Doe"
+            id="user_name"
+            required
+        /></label>
+        <label for="other Name"
+          >Enter other name:
+          <input
+            type="text"
+            name="other Name"
+            placeholder="Jane Doe"
+            id="lover_name"
+            required
+        /></label>
+        <button id="submitbtn">Get love Percentage %</button><br /><br />
+      </form>
+
+      <p id="res" class="hidden">Hello</p>
+
+      <!-- Modal Section to be Implemented -->
+      <!--Should be in sync with the genBtn click-->
+      <div id="myModal" class="modal">
+        <div class="modal-content" style="text-align: center;">
+          <span class="close">&times;</span>
+          <p id="res2"></p>
+
+          <span style="float: right; font-size: 10px; ">work still in progress <br/><a
+            
+            href="bnusmann22.github.io/RcptGen/"
+            target="_blank"
+            >link to the post project</a
+          ></span>
+          
+        </div>
+      </div>
+      <!-- End of Modal Section -->
+    </div>
+
+    <button class="butn pause">Pause Timer</button>
+    <button class="butn genBtn">Generate Post Image</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
