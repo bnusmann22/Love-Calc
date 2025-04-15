@@ -1,7 +1,7 @@
 /*Mobile screens Only*/
-@media screen and (max-width: 600px) {
+@media(max-width: 600px) {
 body {
-    background-color: peachpuff;
+    background-color: rgb(235, 173, 119);
 }
 .main{
     font-size: 1.75rem;
