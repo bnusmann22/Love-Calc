@@ -79,9 +79,13 @@ const cntDwn = () => {
 };
 
 genPost.onclick = () => {
-  modal.style.display = 'block';
-  mdlTxt.innerHTML = advTxt();
-  clearer();
+  if (uName === '' || lName === '') {
+    throw new Error('One or both inputs are EMPTY');
+  } else {
+    modal.style.display = 'block';
+    mdlTxt.innerHTML = advTxt();
+    clearer();
+  }
 };
 span.onclick = function () {
   modal.style.display = 'none';
@@ -92,3 +96,11 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+// Responsive codes
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+if (mediaQuery.matches) {
+  uNameInput.placeholder = `😊  ${uNameInput.name}`;
+  lNameInput.placeholder = `💘 ${lNameInput.name}`;
+}

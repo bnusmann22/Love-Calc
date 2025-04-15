@@ -1,0 +1,27 @@
+/*Mobile screens Only*/
+@media screen and (max-width: 600px) {
+body {
+    background-color: peachpuff;
+}
+.main{
+    font-size: 1.75rem;
+    color: red;
+}
+#submitbtn {
+    background: none;
+    border: none;
+    background-color: rgb(104, 5, 5);
+    padding: 15px;
+    margin: 15px 0 0 15%;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 3px 5px 4px #888;
+  }
+  label{
+    display: none;
+  }
+  form {
+    gap: 25px;
+    padding-top: 30px;
+  }
+}
